@@ -87,10 +87,10 @@ def fun(INPUT):
 
     title = [x['_source']  for x in res['hits']['hits']]
     str=''
-    str=str+'Showing result for :'+INPUT+'\n'
+    str=str+'Showing result for->'+INPUT+' :<br>'
     for Heading in title:
-        str=str+'Date:'+ Heading['Date']+'\n'+'Heading:'+ Heading['Heading']+'\n'+'Content:'+Heading['Content']+'\n'
-    str=str+'\n'
+        str=str+("-" * 100)+'<br>'+'Date:'+ Heading['Date']+'<br>'+'Heading:'+ Heading['Heading']+'<br>'+'Content:'+Heading['Content']+'<br>'
+    str=str+'<br>'
     return str
 # print(fun('Dixons Allerton Academy'))
 if __name__ == "__main__":
